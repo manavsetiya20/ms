@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">PURSUIT-2021</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h1>tecno hunt</h1>
+            <p>Organised by Computer Science and Engineering Student's Association (CSESA)</p>
+            <a href="#descriptionBanner" id="description">About Event</a>
+        </div>
+    </section>
+
+    <section id="descriptionBanner">
+        <div class="eventsRule">
+            <div class="description">
+                <h2>Description</h2>
+                <p>Participants will get to learn competitive programming which is required for placement in companies
+                    selection test and interview.Participants will be able to learn how to apply problem solving in an
+                    effective manner with optimum utilization of time and computational resources.</p>
+            </div>
+            <div class="rules">
+                <p>Rules</p>
+                <ol type="1">
+                    <li style="list-style-position: inside;">All the first to final year students are allowed to
+                        participate</li>
+                    <li style="list-style-position: inside;">Maximum members per Team can be 2.</li>
+                    <li style="list-style-position: inside;"> Use of Internet is not allowed.</li>
+                    <li style="list-style-position: inside;">Problem resolution must be given in a specified time for a
+                        specific problem.</li>
+                    <li style="list-style-position: inside;">Any programming language can be used.</li>
+                    <li style="list-style-position: inside;"> All participants should have valid ID cards of their
+                        respective institute, along with the
+                        registration receipt.</li>
+                    <li style="list-style-position: inside;">All participants must be punctual. In case of failure, the
+                        participants will be eliminated.</li>
+                    <li style="list-style-position: inside;">The decision of judges and the organizers will be final and
+                        binding to all.</li>
+                    <li style="list-style-position: inside;">In case any assistance is needed during the event, the
+                        teams should approach only the event</li>
+                    <li style="list-style-position: inside;">Participants are requested to check the PURSUIT’20 website,
+                        for any updation in rules before</li>
+                    <li style="list-style-position: inside;">The decision of judges will be final and no arguments will
+                        be entertained</li>
+                    <li style="list-style-position: inside;">Physical damage or irresponsible handling to any facility
+                        provided to participants will lead to disqualification.</li>
+                    <li style="list-style-position: inside;"> No person can be a part of multiple teams. In case of any
+                        clashes, the organizers of the event will not be responsible.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="eventsStructure">
+            <h2>Event Structure</h2>
+            <ol type="1" style="list-style-position: inside;">
+                <li>The event will consist of two rounds.</li>
+                <li>In each round programming question will be given to the team members</li>
+                <li>Each team members output will help the other members of the same team</li>
+                <li>There will be life lines like in KBC to help them score points</li>
+            </ol>
+        </div>
+    </section>
+    <!-- FOOTER BHAI  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="ibit.ly/1Zb3">College Site</a></li>
+                        <li><a href="ibit.ly/PQyY">University Site</a></li>
+                        <li><a href="ibit.ly/OTyB">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>All Events</h4>
+                    <ul>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+
+                        <li><a href="ibit.ly/OTyB">CodeCode</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Venue</h4>
+                    <ul>
+                        <li><a href="#">SSGMCE, Shegaon</a></li>
+                        <li><a href="#">ssgmcepursuit2020@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
